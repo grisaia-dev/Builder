@@ -1,4 +1,4 @@
-#include <iostream>
+п»ї#include <iostream>
 #include "lib/SqlBuilder.hxx"
 
 int main(void) {
@@ -10,10 +10,10 @@ int main(void) {
 	query_builder.BuildQuery();
 
 	if (query_builder.GetQuery() == "SELECT name, phone FROM students WHERE id=42 AND name=John;")
-		std::cout << "Запрос построен верно!" << std::endl;
+		std::cout << "Р—Р°РїСЂРѕСЃ РїРѕСЃС‚СЂРѕРµРЅ РІРµСЂРЅРѕ!" << std::endl;
 	else {
 		std::cout << query_builder.GetQuery() << std::endl;
-		std::cout << "Неверный запрос!" << std::endl;
+		std::cout << "РќРµРІРµСЂРЅС‹Р№ Р·Р°РїСЂРѕСЃ!" << std::endl;
 	}
 
 	return EXIT_SUCCESS;
